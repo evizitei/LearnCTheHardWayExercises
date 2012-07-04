@@ -1,6 +1,7 @@
 CFLAGS=-Wall -g
 
 clean:
-	rm -r ex9
+	rm -r bin/*
 
-all: ex9
+all:
+	cc $(CFLAGS) ex9.c -o bin/ex9
